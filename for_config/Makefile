@@ -8,7 +8,7 @@ all:
 	echo "do nothing"
 
 %.o: %.f90
-	test -d ${code/bin} || mkdir ${code/bin} 
+	test -d ${bin} || mkdir ${bin} 
 	cp $< ${code}/config.f90
 	(cd ${code};make all )
 
